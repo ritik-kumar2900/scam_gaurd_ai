@@ -16,3 +16,7 @@ def get_logger(name: str) -> logging.Logger:
     )
 
     return logging.getLogger(name)
+
+
+def load_file(filepath: str) -> str:
+    return Path(filepath).read_text().strip()
