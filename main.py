@@ -14,8 +14,8 @@ def main():
     Main function that runs the scam detection workflow.
     """
     detector = ScamDetector()
-    # test_message = input("Enter the text message to analyze: ")
-    test_message = "Congratulations! You've won a free cruise to the Bahamas. Click here to claim your prize."
+    test_message = input("Enter the text message to analyze: ")
+    # test_message = "Congratulations! You've won a free cruise to the Bahamas. Click here to claim your prize."
     try:
         logger.info("Running the scam detection workflow.")
         result = detector.detect(test_message)
